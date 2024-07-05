@@ -15,7 +15,7 @@ import ejemplo.clase.jdbc.service.StudentRepository;
 
 @RestController
 @RequestMapping("/students")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 public class JdbcController {
     private final StudentRepository customerRepository;
 
