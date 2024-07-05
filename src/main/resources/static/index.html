@@ -1,17 +1,21 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<!doctype html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Add Customer</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>React App</title>
+    <script defer="defer" src="/static/js/main.daec926f.js"></script>
+    <link href="/static/css/main.979fcd30.css" rel="stylesheet">
 </head>
-<body>
-    <h2>Add Customer</h2>
-    <form th:action="@{/customers/new}" th:object="${customer}" method="post">
-        <p>Correo: <input type="text" th:field="*{correo}" /></p>
-        <p>Nombre: <input type="text" th:field="*{nombre}" /></p>
-        <p>Edad: <input type="text" th:field="*{edad}" /></p>
-        <p>Programa: <input type="text" th:field="*{programa}" /></p>
-        <p><input type="submit" value="Add Customer" /></p>
-    </form>
+
+<body><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
 </body>
+
 </html>
